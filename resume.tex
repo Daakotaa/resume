@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex
+% Author : Dakota McDanils
+% License : MIT
+%------------------------
+
+\documentclass[a4paper]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[
+  margin=2.2cm,
+  includefoot,
+  footskip=30pt,
+]{geometry}
+\usepackage{layout}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://dakot.ai/}{\Large Dakota McDaniels}} & Email : \href{mailto:dakotajmcd@gmail.com}{dakotajmcd@gmail.com}\\
+  \href{http://dakot.ai/}{dakot.ai} & Mobile : +1-803-422-5536 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+  
+	\resumeSubheading
+ 	{Pluto}{San Francisco, CA}
+ 	{Co-Founder and Co-CTO}{May 2021 - August 2023}
+		\resumeItemListStart
+			\resumeItem{Fundraising and Leadership}{}
+				\begin{itemize}
+					\item Secured \$5M in funding to accelerate the growth and development of the AI financial advisory platform.
+					\item Grew the user base to over 30,000 while scaling the platform to manage over \$40M in user-linked assets.
+					\item Led a hiring initiative, conducting 100+ interviews and building a team of 10 key employees.
+				\end{itemize}
+			\resumeItem{Infrastructure and Cloud Computing}{}
+				\begin{itemize}
+					\item Architected and deployed 50+ microservices and cron jobs in Python, utilizing CircleCI for automated deployments.
+					\item Managed a robust Kubernetes environment on Digital Ocean, sustaining over 1,000 auto-scaling pods.
+					\item Developed a Kafka-based order management system, processing over 100,000 transactions daily, equating to more than \$100M in daily trading volume.
+					\item Sustained 99.99\% system uptime through comprehensive monitoring protocols, ensuring high availability and reliability.
+				\end{itemize}
+			\resumeItem{Product Development and AI Innovation}{}
+				\begin{itemize}
+					\item Launched a cutting-edge platform for practical and live trading of US equities and cryptocurrencies, leveraging advanced AI to drive user engagement and investment efficiency.
+					\item Introduced the first AI financial assistant, reducing data "hallucinations" by 90\% and increasing response quality by 80\%, using CoT, RAG, and ReAct techniques.
+					\item Created a proprietary Domain-Specific Language (DSL) for LLMs, enabling command generation for stock prices, news updates, and portfolio management.
+				\end{itemize}
+		\resumeItemListEnd
+
+	\resumeSubheading
+    {Lowe's}{Mooresville, NC}
+	{Information Security Analyst}{May 2020 - May 2021}
+		\resumeItemListStart
+			\item Published minimum security baselines for 180,000+ instances including operating systems, applications, and PCI-DSS compliant devices. 
+			\item Designed security baselines for multiple Linux distros, NoSQL databases, NGINX, and PostgREST.
+			\item Led security compliance monitoring across a 70-team organization through routine reporting and notifications.
+		\resumeItemListEnd
+
+	\resumeSubheading
+	{University of South Carolina}{Columbia, SC}
+	{Internship – Networking Technician and Networking Engineer}{October 2018 - December 2020}
+		\resumeItemListStart
+			\item Supervised and mentored nine Computer Science interns, directing project workflows over six months.
+			\item Resolved 445 network and security incidents, accounting for 42.5\% of the internship program’s total output.
+			\item Managed network infrastructure with over 850 switches and 4,100 access points across the campus using industry-standard tools like SolarWinds, Cisco, and Aruba ClearPass.
+		\resumeItemListEnd
+		
+	\resumeSubheading
+	{Office of Naval Research}{Columbia, SC}
+	{Undergraduate Research in Cyber Security}{August 2020 - October 2020}
+		\resumeItemListStart
+			\item Researched DDoS attack mitigation using Palo Alto’s next-generation firewalls.
+			\item Developed training materials for CI engineers on high-throughput, low-latency network environments.
+			\item Awarded part of the \$499,959.00 grant for "Cyberinfrastructure Expertise on High-throughput Networks for Big Science Data Transfers" (NSF 1829698).
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+    \resumeSubHeadingListStart
+		\resumeSubItem{Quantitative Securities Trading System}
+			\resumeItemListStart
+				\item Built a performant, event-sourced data pipeline for backtesting and live-trading with Python and Jupyter Labs.
+				\item Conducted extensive backtests with over 700,000 minutes of historical trading data to validate investment strategies.
+				\item Deployed a secure AWS infrastructure using ECS and Docker to manage over \$50,000 of personal investment capital.
+			\resumeItemListEnd
+		\resumeSubItem{BetterReplies}{An iOS app featuring a fine-tuned AI assistant capable of generating personalized replies}
+			\resumeItemListStart
+				\item Developed with Python and SwiftUI, automatically deployed using GitHub Actions and Terraform.
+				\item Integrated a robust, cloud-native backend architecture on AWS, including ECR, Lambda, S3, and API Gateway.
+				\item Performed comparative analysis of LLM providers such as OpenAi, Anthropic, and LLaMa to optimize AI response quality.
+			\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+ \section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}: Python, Swift, SQL, Terraform
+      \hfill
+      \textbf{Cloud Providers}: AWS, Digital Ocean, Heroku
+    }
+    \item \textbf{Databases}: MongoDB, Postgres, Supabase 
+	\item \textbf{Technologies}: Redis, REST, Kafka, Kubernetes, Git, Flask, CircleCi, Github Actions
+	\item \textbf{LLMs}: Prompt Engineering, Fine-tuning, Data Gathering, Retrieval-Augmented Generation, Chain-of-Thought 
+	\item \textbf{Paradigms}: Functional Programming, OOP, Microservices, Infrastructure as Code, Cloud Native, CI/CD, Microservices
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
