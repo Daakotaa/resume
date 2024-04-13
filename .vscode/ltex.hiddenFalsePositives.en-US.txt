@@ -1,4 +1,0 @@
-{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMay 2020 - May 2021.\\E$"}
-{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMooresville, NC.\\E$"}
-{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QColumbia, SC.\\E$"}
-{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QOctober 2018 - December 2020.\\E$"}
