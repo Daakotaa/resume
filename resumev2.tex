@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex
+% Author : Dakota McDanils
+% License : MIT
+%------------------------
+
+\documentclass[a4paper]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[
+  margin=2.2cm,
+  includefoot,
+  footskip=30pt,
+]{geometry}
+\usepackage{layout}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.4cm]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://dakot.ai/}{\Large Dakota McDaniels}} & Email : \href{mailto:dakotajmcd@gmail.com}{dakotajmcd@gmail.com}\\
+  \href{http://dakot.ai/}{dakot.ai} & Mobile : +1-803-422-5536 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+  
+	\resumeSubheading
+	{Pluto.fi}{San Francisco, CA}
+ 	{Co-Founder and Co-CTO}{May 2021 - August 2023}
+		\resumeItemListStart
+			\resumeItem{Fundraising and Leadership}{}
+				\begin{itemize}[leftmargin=0.35cm]
+					\item Raised \$5M in VC funding to build and scale Pluto's AI financial advisory product.
+					\item Scaled the technology and team to support 25,000 users and over \$40M in tracked assets.
+					\item Conducted 100+ interviews after sourcing candidates from AngelList, recruiters, and inbound applications.
+					\item Hired a team of 3 engineers and product designers.
+				\end{itemize}
+			\resumeItem{Infrastructure and Cloud Computing}{}
+				\begin{itemize}[leftmargin=0.35cm]
+					\item Architected and deployed 50+ K8s microservices and cron jobs alongside CI/CD with CircleCI.
+					\item Managed a 30 node Kubernetes cluster with over 1TB of RAM to support a 10,000 pod workload.
+					\item Built an order management system to process 12.5M trading decisions every hour using Kafka.
+					\item Achieved 99.99\% system uptime through comprehensive monitoring and observability.
+					\item Engineered a high-performance database architecture using MongoDB and Redis, which supported ultra-high transaction volumes of 100+ million per month with average latency under 10ms.
+				\end{itemize}
+			\resumeItem{Product Management and AI Innovation}{}
+				\begin{itemize}[leftmargin=0.35cm]
+					\item Single-handedly streamlined the entire brokerage integration process to operational readiness in just 14 days – covering payment rails, KYC, order management, and compliance – shattering the typical 6-month timeline for a traditional team of 10.
+					\item Overhauled the user onboarding experience, simplifying KYC and deposit/withdrawal processes, which increased user conversion rates by 30\%.
+					\item Introduced the first AI financial assistant that uses advanced NLP techniques like CoT, RAG, and ReAct to provide accurate and contextually relevant responses to user queries.
+					\item Implemented measures to reduce irrelevant or inconsistent responses by 90\%, significantly improving user experience and engagement.
+					\item Pioneered an AI-powered UI that generates real-time charts and insights based on user prompts for a wide range of financial topics, from individual stock performance to market trends.
+				\end{itemize}
+		\resumeItemListEnd
+
+	\resumeSubheading
+    {Lowe's}{Mooresville, NC}
+	{Cybersecurity Engineer}{May 2020 - May 2021}
+
+	\resumeSubheading
+	{University of South Carolina}{Columbia, SC}
+	{Internship – Network Security Engineer}{October 2018 - December 2020}
+
+	\resumeSubheading
+	{Office of Naval Research}{Columbia, SC}
+	{Undergraduate Research in Cybersecurity}{August 2020 - October 2020}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+    \resumeSubHeadingListStart
+		\resumeSubItem{Quantitative Securities Trading System}
+			\resumeItemListStart
+				\item Built a performant, event-sourced data pipeline for backtesting with over 700M minutes of historical tick data in Python.
+				\item Deployed a secure AWS infrastructure on ECS and Docker to manage over \$50,000 of personal investment capital.
+			\resumeItemListEnd
+		\resumeSubItem{BetterReplies}{An iOS app featuring a fine-tuned AI assistant capable of generating personalized replies}
+			\resumeItemListStart
+				\item Developed with Python and SwiftUI, automatically deployed using GitHub Actions and Terraform.
+				\item Integrated a robust, cloud-native backend architecture on AWS, including ECR, Lambda, S3, and API Gateway.
+				\item Performed comparative analysis of LLM providers such as OpenAi, Anthropic, and LLaMa to optimize AI response quality.
+			\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%--------EDUCATION------------
+ \section{Education}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+	{University of South Carolina}{Columbia, SC}
+	{Bachelor of Science}{August 2018 - December 2020}
+		\resumeItemListStart
+			\item Degree in Integrated Information Technology (Hybrid degree for Computer Science and Cybersecurity)
+			\item Major GPA of 4.0, Overall GPA of 3.986
+		\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+ \section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}: Python, Swift, SQL, Terraform
+      \hfill
+      \textbf{Cloud Providers}: AWS, Digital Ocean, Heroku
+    }
+    \item \textbf{Databases}: MongoDB, Postgres, Redis, Pinecone, Supabase
+	\item \textbf{Technologies}: REST, Kafka, Kubernetes, Git, Flask, CircleCi, Github Actions
+	\item \textbf{LLMs}: Prompt Engineering, Fine-tuning, Data Gathering, Retrieval-Augmented Generation, Chain-of-Thought 
+	\item \textbf{Paradigms}: Functional Programming, OOP, Microservices, Infrastructure as Code, Cloud Native
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
